@@ -1,0 +1,132 @@
+/* 🌌 FONDO GRADIENTE OSCURO */
+body {
+    background: radial-gradient(circle at top, #1a1a2e, #0f172a);
+     color: #f1f5f9;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(10px);
+}
+.nav-link {
+    color: #e2e8f0 !important;
+}
+.nav-link:hover {
+    color: #38bdf8 !important;
+}
+
+/* 🌟 HERO PRO */
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* EFECTO LUZ */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #00f5ff;
+    filter: blur(120px);
+    top: -100px;
+    left: -100px;
+    opacity: 0.4;
+}
+
+/* TEXTO HERO */
+.hero h1 {
+    font-size: 3rem;
+    color: #e0f2fe; /* azul claro */
+    text-shadow: 0 0 10px rgba(0,255,255,0.6);
+}
+
+
+.hero p {
+    color: #cbd5f5; /* gris claro */
+}
+
+/* ✨ CARDS GLASS */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+    color: #f8fafc;
+}
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 25px rgba(0,255,255,0.3);
+}
+
+/* BOTONES NEÓN */
+.btn-primary {
+    background: linear-gradient(45deg, #00f5ff, #6366f1);
+    border: none;
+    border-radius: 25px;
+}
+.btn-primary:hover {
+    box-shadow: 0 0 15px #00f5ff;
+}
+
+/* INPUTS */
+input, textarea {
+    background: rgba(255,255,255,0.05) !important;
+    border: 1px solid rgba(255,255,255,0.1);
+   color: #f1f5f9 !important;
+}
+
+/* FOOTER */
+.footer {
+    background: #020617;
+    color: #94a3b8;
+    padding: 25px;
+    text-align: center;
+}
+
+/* LISTAS */
+.list-group-item {
+    background: transparent;
+     color: #f1f5f9;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+::placeholder {
+    color: #94a3b8 !important;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.footer {
+    margin-top: auto;
+}
