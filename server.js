@@ -8,6 +8,10 @@ const server = http.createServer((req, res) => {
         res.end();
         return;
     }
+     if (req.url === '/') {
+        req.url = '/index.html';
+    }
+
 
     const filePath = path.join(__dirname, 'public', req.url);
 
